@@ -4,6 +4,7 @@
   ini_set('display_errors', 1);
 
 
+  # обновит контакт (имя, телефон, почту, установит статус и привяжет две компании)
   $contact = array(
     'data' => array(
       'type' => 'contacts',
@@ -18,6 +19,18 @@
           "data" => array(
             "type" => "statuses",
             "id" => 63325
+          )
+        ),
+       "companies" => array(
+          "data" => array(
+            array(
+              "type"=>"companies", 
+              "id"=>123
+            ),
+            array(
+              "type"=>"companies",
+              "id"=>124
+            ) 
           )
         )
       )
